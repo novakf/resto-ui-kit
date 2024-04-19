@@ -32,7 +32,7 @@ module.exports = {
       },
       {
         test: /\.s?css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.hbs$/,
@@ -50,9 +50,6 @@ module.exports = {
   },
 
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'styles.css',
-    }),
     new CopyWebpackPlugin({ patterns: [{ from: 'src/assets', to: 'assets' }] }),
   ],
 
