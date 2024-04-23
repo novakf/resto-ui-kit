@@ -5,11 +5,16 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "NODE_ENV=production npx webpack --mode=production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build",
+    "prerelease": "./scripts/prerelease.sh && npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/novakf/resto-ui-kit.git"
+  },
+  "publishConfig": {
+    "resto-ui-kit:registry": "https://github.com/novakf/resto-ui-kit.git"
   },
   "author": "",
   "license": "ISC",
