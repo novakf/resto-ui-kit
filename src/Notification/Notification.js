@@ -186,7 +186,7 @@ class Notification {
 	 * @param {'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'} params.position - расположение
 	 * @param {'success' | 'error'} params.type - тип уведомления
 	 */
-	open({ duration, position, ...params }) {
+	open({ duration = 3, position, ...params }) {
 		this.#count++;
 
 		if (position) {
