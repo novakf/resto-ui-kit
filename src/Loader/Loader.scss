@@ -1,0 +1,47 @@
+.loader {
+	border-radius: 50%;
+	animation: animate 0.7s linear infinite;
+	cursor: pointer;
+
+	&__style--primary:not(.loader__size--xl) {
+		border: 2px solid var(--brand);
+		border-right: none;
+	}
+
+	&__style--secondary {
+		border: 2px solid var(--loader-secondary);
+		border-right: none;
+	}
+
+	&__size--s {
+		width: 13px;
+		height: 12px;
+	}
+
+	&__size--m {
+		width: 32px;
+		height: 32px;
+	}
+
+	&__size--l {
+		width: 40px;
+		height: 40px;
+	}
+
+	&__size--xl {
+		width: 92px;
+		height: 90px;
+		border: 3px solid var(--brand);
+		border-right: none;
+	}
+
+	@keyframes animate {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+}
