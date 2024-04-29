@@ -1,6 +1,6 @@
 {
   "name": "resto-ui",
-  "version": "1.0.7",
+  "version": "1.0.8-master-rc.0",
   "description": "Resto UI Kit",
   "main": "./dist/index.js",
   "scripts": {
