@@ -14,7 +14,7 @@
     "url": "git+https://github.com/novakf/resto-ui-kit.git"
   },
   "publishConfig": {
-    "registry": "https://github.com/novakf/resto-ui-kit.git"
+    "@novakf:registry": "https://npm.pkg.github.com"
   },
   "author": "",
   "license": "ISC",
